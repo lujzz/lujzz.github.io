@@ -1,6 +1,7 @@
-http://lllzzz.ltd/%E6%9D%82%E9%A1%B9/python-1
-http://lllzzz.ltd/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/linux-1
-http://lllzzz.ltd/leetcode/leetcode
-http://lllzzz.ltd/%E6%9D%82%E9%A1%B9/hexo-error
-http://lllzzz.ltd/CV/NMS
-http://lllzzz.ltd/%E6%9D%82%E9%A1%B9/hello_world
+https://lllzzz.ltd/leetcode/leetcode/
+https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/python-1/
+https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/record-1/
+https://lllzzz.ltd/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/linux-1/
+https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/hexo-error/
+https://lllzzz.ltd/CV/NMS/
+https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/hello_world/
