@@ -6,7 +6,7 @@
 <meta property="og:description" content="本篇博客用于回顾数据结构相关的知识点。（考完试之后真的是全忘记了）">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-15T15:09:56.000Z">
-<meta property="article:modified_time" content="2021-03-18T04:32:35.435Z">
+<meta property="article:modified_time" content="2021-03-18T08:52:59.552Z">
 <meta property="article:author" content="lujzz">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary"><title>数据结构整理 | lujzz_website</title><link ref="canonical" href="https://lllzzz.ltd/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/data-structure/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
@@ -33,7 +33,7 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">lujzz_website</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">数据结构整理</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-18</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">843</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">4分</span></span></div></header><div class="post-body"><p>本篇博客用于回顾数据结构相关的知识点。（考完试之后真的是全忘记了）</p>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">lujzz_website</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">数据结构整理</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-18</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.8k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">9分</span></span></div></header><div class="post-body"><p>本篇博客用于回顾数据结构相关的知识点。（考完试之后真的是全忘记了）</p>
  <span id="more"></span> 
 
 
@@ -85,7 +85,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </li>
 </ul>
 </li>
-<li><p>**<u>链表</u>**：存储相邻元素的物理位置，物理位置不相邻。（头结点）</p>
+<li><p><strong>链表</strong>：存储相邻元素的物理位置，物理位置不相邻。（头结点）</p>
 <p><u>*在任何运算之前都应该考虑该操作的合理性！</u></p>
 <ul>
 <li><p>插入：m,n之间插入k<br>$$<br>k\rightarrow next = m\rightarrow next \<br>m\rightarrow next = k<br>$$</p>
@@ -132,13 +132,170 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </li>
 </ul>
 </li>
-<li><p>栈的应用——括号匹配、表达式求值（后缀表达式）</p>
+<li><p>栈的应用——括号匹配、表达式求值（后缀表达式）、递归</p>
 <p>​    *后缀表达式：从左到右遍历中缀表达式，如果是数字则输出，符号和栈顶元素比较优先级，小于等于则进栈，大于则出栈直到出现优先级更大的栈顶元素，若是左括号则直接进栈，若是右括号，则出栈直到左括号。</p>
 <p>​      或：先按运算符优先级对所有运算符和它的运算数加括号(原本的括号不用加)，再把把运算符移到对应的括号后，最后去掉括号即可。</p>
+</li>
+</ol>
+
+        <h3 id="Chapter4：树"   >
+          <a href="#Chapter4：树" class="heading-link"><i class="fas fa-link"></i></a><a href="#Chapter4：树" class="headerlink" title="Chapter4：树"></a>Chapter4：树</h3>
+      <ol>
+<li><p>基本概念：递归定义的结构。</p>
+<p>——节点、根节点、节点的度、节点关系、层次、深度</p>
+<p>——性质：</p>
+<ul>
+<li>树中的结点数等于所有结点树加一。除根节点外，一个度可以看作是指对于一个结点的指向，所以结点数等于度的个数加一。</li>
+<li>度为<code>m</code>的树中第<code>i</code>层至多有<code>m^(i-1)</code> 个结点。（数学归纳法）</li>
+<li>高度为<code>h</code>的<code>m</code>叉树至多有<code>(m^h-1)/(m-1)</code>个结点</li>
+<li>具有<code>n</code>个结点的<code>m</code>叉树的最小高度为<code>logm(n(m-1)+1)</code></li>
+</ul>
+</li>
+<li><p>存储结构：</p>
+<ul>
+<li>顺序存储结构：双亲表示法——用一组连续的存储空间存储树的结点，同时在每个结点中，用一个变量存储该结点的双亲结点在数组中的位置。</li>
+<li>链式存储结构：<ul>
+<li>孩子表示法</li>
+<li>孩子兄弟表示法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>二叉树</strong>：</p>
+<ul>
+<li><p>二叉树——左子树、右子树——二叉树。</p>
+</li>
+<li><p>存储结构：</p>
+<ul>
+<li>顺序存储：用一组地址连续的存储单元依次自上而下、自左至右存储完全二叉树上的结点元素。</li>
+<li>链式存储：在结点结构里考虑两个指针指向该结点的两个孩子。</li>
+</ul>
+</li>
+<li><p><strong>遍历</strong>：</p>
+<ul>
+<li>先序遍历：根节点——左子树——右子树</li>
+<li>中序遍历：左子树——根节点——右子树</li>
+<li>后序遍历：左子树——右子树——根节点</li>
+</ul>
+</li>
+<li><p>线索二叉树：使用空指针存储前驱和后继元素</p>
+</li>
+<li><p>哈夫曼树：<strong>带权路径长度最小</strong>——由叶子结点由下到上根据权重提取树的结构。——代码</p>
+</li>
+</ul>
+</li>
+</ol>
+
+        <h3 id="Chapter5：图"   >
+          <a href="#Chapter5：图" class="heading-link"><i class="fas fa-link"></i></a><a href="#Chapter5：图" class="headerlink" title="Chapter5：图"></a>Chapter5：图</h3>
+      <ol>
+<li><p>基本概念：顶点、边、有向图、无向图、简单图、子图、连通图、度······</p>
+</li>
+<li><p>存储结构：邻接矩阵（顺序存储）、邻接表（链式存储）——十字链表、邻接多重表。</p>
+</li>
+<li><p><strong>遍历</strong>：</p>
+<ul>
+<li>深度优先搜索（DFS）：递归，栈</li>
+<li>广度优先搜索（BFS）：遍历，队列</li>
+</ul>
+</li>
+<li><p>应用</p>
+<ul>
+<li><p>最小生成树</p>
+<ul>
+<li><code>Prim</code> ：由顶点寻找权值最小的边，适合稠密图</li>
+<li><code>Kruskal</code>：由权值最小的边确定顶点，适合稀疏图</li>
+</ul>
+</li>
+<li><p>最短路径</p>
+<ul>
+<li><p><code>Dijkstra算法</code>（一个源点到其余顶点的最短路径）（两个数组）</p>
+<p>初始——确定一个顶点——更新——重复</p>
+</li>
+<li><p><code>Floyd算法</code> （任意两点之间的最短路径）</p>
+<p>中介结点······</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+        <h3 id="Chapter6：查找"   >
+          <a href="#Chapter6：查找" class="heading-link"><i class="fas fa-link"></i></a><a href="#Chapter6：查找" class="headerlink" title="Chapter6：查找"></a>Chapter6：查找</h3>
+      <ol>
+<li><p>静态查找、动态查找、关键字</p>
+</li>
+<li><p>顺序查找</p>
+</li>
+<li><p>折半查找（需要先排序）</p>
+</li>
+<li><p>索引顺序表的查找（关键字和指针项，分块有序）</p>
+</li>
+<li><p>根据概率构造PH最小的二叉树</p>
+</li>
+<li><p><strong>二叉排序树</strong>（左&lt;中&lt;右）（插入、删除）</p>
+</li>
+<li><p>二叉平衡树</p>
+</li>
+<li><p>哈希表（关键字映射到地址集合上）</p>
+<p>——哈希函数的构造方法</p>
+<p>——冲突（开放定址法、链地址法）</p>
+</li>
+</ol>
+
+        <h3 id="Chapter7：排序"   >
+          <a href="#Chapter7：排序" class="heading-link"><i class="fas fa-link"></i></a><a href="#Chapter7：排序" class="headerlink" title="Chapter7：排序"></a>Chapter7：排序</h3>
+      <p>*稳定性   </p>
+<ol>
+<li><p>插入类：（比较+移动）</p>
+<ul>
+<li><p>直接插入排序 <code>O(n^2)</code> ：待插入的元素—在已经排序的元素中寻找待插入元素的位置—移动已排序元素，插入待插入的元素—重复</p>
+<p>——从后往前，设置哨兵</p>
+</li>
+<li><p>折半插入排序 <code>O(n^2)</code> </p>
+</li>
+<li><p>表插入排序</p>
+</li>
+<li><p>希尔排序：将原序列分为若干子序列，逐渐减小增量直到最后减为1</p>
+</li>
+</ul>
+</li>
+<li><p>交换类：</p>
+<ul>
+<li><p>冒泡排序：两两比较</p>
+</li>
+<li><p>快速排序 <code>O(nlogn)</code> ：枢轴记录</p>
+<p>​        借助栈进行操作，空间复杂度 <code>O(n)</code> </p>
+</li>
+</ul>
+</li>
+<li><p>选择类：</p>
+<ul>
+<li>简单选择排序</li>
+<li>锦标赛排序：时间复杂度：<code>O(nlogn)</code>    空间复杂度：<code>O(n)</code></li>
+<li>堆排序：时间复杂度：<code>O(nlogn)</code><ul>
+<li>堆：堆是一棵完全二叉树，而且满足任何一个非叶结点的值都不大于(或不小于)其左右孩子结点的值。</li>
+<li>建堆：初始建堆，然后从第<code>n/2</code>个元素向前进行调整。</li>
+<li>获取堆顶元素后调整堆：将最后一个元素放在堆顶，然后进行交换调整。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>归并类：</p>
+<ul>
+<li>归并排序：时间复杂度：<code>O(nlogn)</code></li>
+</ul>
+</li>
+<li><p>基数排序：</p>
 </li>
 </ol>
 </div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://lllzzz.ltd">lujzz</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://lllzzz.ltd/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/data-structure/">https://lllzzz.ltd/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/data-structure/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://lllzzz.ltd/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/jupyter/jupyter/"><span class="paginator-prev__text">jupyter相关</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%B4%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">
           数据结构整理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter1%EF%BC%9A%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.0.1.</span> <span class="toc-text">
           Chapter1：基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter2%EF%BC%9A%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-number">1.0.2.</span> <span class="toc-text">
           Chapter2：线性表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter3%EF%BC%9A%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97"><span class="toc-number">1.0.3.</span> <span class="toc-text">
-          Chapter3：栈和队列</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/riki_2.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">lujzz</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>lujzz</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
+          Chapter3：栈和队列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter4%EF%BC%9A%E6%A0%91"><span class="toc-number">1.0.4.</span> <span class="toc-text">
+          Chapter4：树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter5%EF%BC%9A%E5%9B%BE"><span class="toc-number">1.0.5.</span> <span class="toc-text">
+          Chapter5：图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter6%EF%BC%9A%E6%9F%A5%E6%89%BE"><span class="toc-number">1.0.6.</span> <span class="toc-text">
+          Chapter6：查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter7%EF%BC%9A%E6%8E%92%E5%BA%8F"><span class="toc-number">1.0.7.</span> <span class="toc-text">
+          Chapter7：排序</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/riki_2.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">lujzz</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>lujzz</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
