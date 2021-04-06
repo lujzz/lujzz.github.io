@@ -1,4 +1,6 @@
+https://lllzzz.ltd/pytorch/0406/
 https://lllzzz.ltd/CV/0329/
+https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/python-1/
 https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/record-1/
 https://lllzzz.ltd/C/C/
 https://lllzzz.ltd/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/data-structure/
@@ -6,5 +8,3 @@ https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/hello_world/
 https://lllzzz.ltd/jupyter/jupyter/
 https://lllzzz.ltd/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81/linux-1/
 https://lllzzz.ltd/leetcode/leetcode/
-https://lllzzz.ltd/pycharm/pycharm/
-https://lllzzz.ltd/%E6%9D%82%E9%A1%B9/python-1/
